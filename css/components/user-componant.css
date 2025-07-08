@@ -1,0 +1,29 @@
+.user-componen,
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+/* 사진크기 조정 */
+.user-component__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 32px;
+}
+
+.user-component__name {
+    font-weight: 650;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.user-component__subtitle {
+    margin-top: 8px;
+    font-size: 18px;
+    color: rgba(14, 14, 14, 0.473);
+}
+
+.user-component__avatar--xl {
+    width: 80px;
+    height: 80px;
+}

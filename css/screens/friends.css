@@ -1,0 +1,16 @@
+#friends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    position: sticky;
+    margin-bottom: 10px;
+}
+
+#friends-display-link i {
+    color: #d5d5d5;
+}
+
+.friends-screen {
+    padding: 0px var(--horizental-space);
+}
