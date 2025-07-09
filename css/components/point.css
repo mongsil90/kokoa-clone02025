@@ -1,0 +1,9 @@
+.point {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
