@@ -1,0 +1,30 @@
+.settings-main__setting {
+    margin: 50px 30px;
+}
+
+.settings-main__setting__column {
+    margin: 30px 0px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+}
+
+.settings-main__setting__column i {
+    margin-right: 15px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.settings-main__setting__column span {
+    font-weight: 500;
+}
+
+.settings-main__setting__column:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#latest-version {
+    font-size: 20px;
+    color: var(--gray);
+}
