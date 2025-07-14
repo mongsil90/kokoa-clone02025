@@ -7,7 +7,7 @@
         <title>Chatbox - Kokoa Clone</title>
     </head>
     <body id="chatbox">
-        <div class="status-bar">
+        <div class="status-bar chatbox__status-bar">
             <div class="status-bar__column">
                 <span>No Service</span>
                 <i class="fa-solid fa-wifi"></i>
@@ -23,12 +23,12 @@
         </div>
 
 
-        <header class="settings-header">
+        <header class="settings-header chatbox__status-bar">
             <div class="settings-header__column">
                 <a href="charts.html"><i class="fa-solid fa-chevron-left"></i></a>
             </div>
             <div class="settings-header__column">
-                <h1>이원재</h1>
+                <h1>몽자</h1>
             </div>
             <div class="settings-header__column">
                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -37,34 +37,48 @@
         </header>
 
 
-        
+        <main class="chatbox-main">
+            <div class="chatbox__timestamp">
+                Monday, July 14, 2025
+            </div>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__btn">
-                    <a class="nav__link" href="friends.html">
-                        <i class="fa-solid fa-user fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="charts.html">
-                        <span class="nav__notific badge">1</span>    
-                        <i class="fa-regular fa-comment fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="find.html">
-                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                    </a>
-                </li>
-                <li class="nav__btn">
-                    <a class="nav__link" href="more.html">
-                        <span class="nav__dot"></span>
-                        <i class="fa-solid fa-ellipsis fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>   
+            <div class="chatbox__message">
+                <img src="몽자.jpg" />
+                <div class="chatbox__message__info">
+                    <div class="chatbox__message__name">몽자(잘나가는 유튜버)</div>
+                    <div class="chatbox__message__text">
+                        <div class="text__bubble">
+                            <span class="text__bubble__content">멍멍</span>
+                            <span class="text__time">20:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbox__message message-me">
+                <div class="chatbox__message__info">
+                    <div class="chatbox__message__text">
+                        <div class="text__bubble">
+                            <span class="text__bubble__content">왜? 배고파?</span>
+                            <span class="text__time">20:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <form class="reply">
+            <div class="reply__column">
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+            <div class="reply__column">
+                <input type="text" placeholder="메시지 입력" />
+                <i class="fa-solid fa-face-smile fa-xl"></i>
+                <button>
+                    <i class="fa-solid fa-arrow-up fa-xl"></i>
+                </button>
+            </div>
+        </form>
 
         <script 
             src="https://kit.fontawesome.com/a678e5c583.js" 
