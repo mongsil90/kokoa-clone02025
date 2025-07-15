@@ -29,6 +29,7 @@
     border-bottom: var(--main-border);
     margin-top: 20px;
     padding-top: 20px;
+
 }
 
 .recommended-friends__title {
@@ -137,4 +138,23 @@
 
 .bts-hashtag__img__heart span {
     margin-left: 3px;
+}
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50% {
+        color: tomato;
+        transform: scale(1);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+
+.bts-hashtag__img__heart:hover i {
+    animation: heartBeat 0.5s linear infinite;
 }

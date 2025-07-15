@@ -1,6 +1,6 @@
 #chatbox {
     background-color: #abc1d1;
-    height: 1000vh;
+    height: 300vh;
 }
 
 #chatbox .settings-header {
@@ -10,11 +10,23 @@
     background-color: #abc1d1;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .chatbox-main {
-    margin-top: 90px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.3s linear;
 }
 
 .chatbox__status-bar {
@@ -103,6 +115,7 @@
     padding: 5px 20px;
     box-sizing: border-box;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -122,10 +135,11 @@
 .reply input {
     height: 40px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 50px;
     border: var(--main-border);
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: white;
     padding-left: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -148,4 +162,25 @@
     color: black;
     border-radius: 50%;
     padding: 12px 12px;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+    opacity: 0;
+}
+
+.reply input:focus {
+    width: 90vw;
+    transform: translateX(-12%) translateY(-50px);
+}
+
+.reply:focus-within {
+    transform: translateY(50px)
 }
